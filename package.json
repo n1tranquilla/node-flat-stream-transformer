@@ -1,6 +1,6 @@
 {
   "name": "flat-stream-transformer",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A transform stream which flattens streams of multidimensional arrays",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/n1tranquilla/node-flat-stream-transformer.git"
   },
-  "bugs":{
+  "bugs": {
     "url": "https://github.com/n1tranquilla/node-flat-stream-transformer/issues"
   },
   "keywords": [
