@@ -20,7 +20,10 @@ describe('FlatStreamTransformer basic usage',function(){
         testStream.on('data',function(number){
             expect(number).to.be.equal(expectedArray[i++]);
         });
-        testStream.on('end',done);
+        testStream.on('end',function(){
+            expect(i).to.be.equal(expectedArray.length);
+            done();
+        });
 
         streamify(array)
             .pipe(transformStream)
