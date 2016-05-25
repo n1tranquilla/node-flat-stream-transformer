@@ -12,13 +12,23 @@ const
 describe('FlatStreamTransformer basic usage',function(){
 
     it('should flatten a streams of multidimensional arrays',function(done){
-        const
-            array=[[1],2,[[[3,[4,5,6]],7]],8,[[9],10],11],
-            expectedArray=[1,2,3,4,5,6,7,8,9,10,11];
+        const array=[
+            [ {key:'value1'}, [ {key:'value2'}, {key:'value3'} ] ],
+            [ {key:'value4'} ],
+            [ {key:'value5'}, {key:'value6'} ]
+        ];
+        const expectedArray=[
+          {key:'value1'},
+          {key:'value2'},
+          {key:'value3'},
+          {key:'value4'},
+          {key:'value5'},
+          {key:'value6'}
+        ];
 
         var i=0;
         testStream.on('data',function(number){
-            expect(number).to.be.equal(expectedArray[i++]);
+            expect(number).to.be.deep.equal(expectedArray[i++]);
         });
         testStream.on('end',function(){
             expect(i).to.be.equal(expectedArray.length);

@@ -9,12 +9,31 @@ const
     FlatStreamTransformer=require('./index.js')
 
 const array=[
-    [{key:'value1'}],
-    [{key:'value2'}],
-    [{key:'value3'}]
+    [
+        {key:'value1'},
+        [
+            {key:'value2'},
+            {key:'value3'}
+        ],
+    ],
+    [
+        {key:'value4'}
+    ],
+    [
+        {key:'value5'},
+        {key:'value6'},
+    ]
 ];
 
 streamify(array)
     .pipe(new FlatStreamTransformer());
 
-//=> [{key:'value1'},{key:'value2'},{key:'value3'}]
+//=>
+//[
+//  {key:'value1'},
+//  {key:'value2'},
+//  {key:'value3'},
+//  {key:'value4'},
+//  {key:'value5'},
+//  {key:'value6'}
+//]

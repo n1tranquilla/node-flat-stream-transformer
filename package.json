@@ -17,7 +17,8 @@
     "stream",
     "flat",
     "flatten",
-    "transform"
+    "transform",
+    "transformer"
   ],
   "author": "Nathan Tranquilla <n1tranquilla@gmail.com>",
   "license": "MIT",
