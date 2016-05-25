@@ -1,6 +1,5 @@
-Flat-stream-transformer is a lightweight Transform stream which flattens an input stream consisting of an
-array of any objects, outputting a flattened stream of the input array. Example usage would be to flatten an
-input stream which is a nested array of json objects.
+Flat-stream-transformer is a lightweight node.js [transform stream](https://nodejs.org/api/stream.html#stream_class_stream_transform)
+which flattens a stream of objects.
 
 ## Basic Usage
 ```
