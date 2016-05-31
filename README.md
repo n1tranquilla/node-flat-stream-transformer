@@ -1,4 +1,4 @@
-Flat-stream-transformer is a lightweight node.js [transform stream](https://nodejs.org/api/stream.html#stream_class_stream_transform)
+flatten-stream is a lightweight node.js [transform stream](https://nodejs.org/api/stream.html#stream_class_stream_transform)
 which flattens a stream of objects.
 
 ## Basic Usage

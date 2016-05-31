@@ -1,7 +1,7 @@
 {
-  "name": "flat-stream-transformer",
-  "version": "0.2.3",
-  "description": "A transform stream which flattens streams of multidimensional arrays",
+  "name": "flatten-stream",
+  "version": "0.0.0",
+  "description": "An implementation of a node transform stream which flattens streams of multidimensional arrays",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test"
